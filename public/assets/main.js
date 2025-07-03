@@ -35,4 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
       answer.style.display = open?'none':'block';
     });
   });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.mobile-nav-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  if (burger && mobileNav) {
+    burger.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+  }
+});
 });
