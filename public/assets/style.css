@@ -237,7 +237,8 @@ footer {
     }
 
     .logo {
-        color: #212529;
+        color: #2090ff;
+        font-weight: 700;
     }
 
     .nav-list {
@@ -373,23 +374,26 @@ footer {
     }
 
     .hero .search-form input[type="text"] {
-        background-image: url('/assets/icons/location.svg');
+        background-image: url('../assets/images/tdesign--location.png');
         background-repeat: no-repeat;
         background-position: 1rem center;
+        background-size: 18px;
         padding-left: 2.5rem;
     }
 
     .hero .search-form input[type="month"] {
-        background-image: url('/assets/icons/calendar.svg');
+        background-image: url('../assets/images/uil--calender.png');
         background-repeat: no-repeat;
         background-position: 1rem center;
+        background-size: 18px;
         padding-left: 2.5rem;
     }
 
     .hero .search-form select {
-        background-image: url('/assets/icons/user.svg');
+        background-image: url('../assets/images/tabler--user.png');
         background-repeat: no-repeat;
         background-position: 1rem center;
+        background-size: 18px;
         padding-left: 2.5rem;
     }
 
