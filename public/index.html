@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -46,7 +48,6 @@
         <div class="overlay"></div>
         <div class="container hero-content" data-aos="fade-down">
             <h1>Discover Your Next Amazing Journey</h1>
-            <p>Embark on an incredible adventure filled with excitement and wonder.</p>
             <form class="search-form">
                 <input type="text" placeholder="Destination or city">
                 <input type="month">
@@ -60,45 +61,43 @@
     </section>
 
     <!-- POPULAR DESTINATIONS -->
-    <section id="popular" class="section">
-        <div class="container">
-            <h2>Explore Popular Destinations</h2>
-            <div class="card-grid square-cards">
-                <div class="card" style="background-image:url('https://picsum.photos/seed/singapore/600')">
-                    <h3>Singapore</h3>
-                </div>
-                <div class="card" style="background-image:url('https://picsum.photos/seed/australia/600')">
-                    <h3>Australia</h3>
-                </div>
-                <div class="card" style="background-image:url('https://picsum.photos/seed/thailand/600')">
-                    <h3>Thailand</h3>
-                </div>
-                <div class="card" style="background-image:url('https://picsum.photos/seed/japan/600')">
-                    <h3>Japan</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEALS (2 side-by-side) -->
     <section id="deals" class="section section-alt">
         <div class="container">
             <h2>Discover the Best Travel Deals of the Month</h2>
-            <div class="deals-grid-two">
-                <div class="deal-card-modern">
-                    <img src="https://picsum.photos/seed/ampat/500/300" alt="Raja Ampat">
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <img src="assets/images/london.jpg" alt="Raja Ampat">
                     <div class="deal-info">
-                        <h3>Raja Ampat, Indonesia</h3>
-                        <p class="price">$640–$950</p>
-                        <button class="btn-primary">Book Now</button>
+                        <h3>London, UK</h3>
+                        <p>Experience a perfect blend of rich history, modern attractions, and royal charm.</p>
+                        <div class="deal-footer">
+                            <span class="price">$640–$950</span>
+                            <button class="btn-outline">Book Now</button>
+                        </div>
                     </div>
                 </div>
-                <div class="deal-card-modern">
-                    <img src="https://picsum.photos/seed/nihi/500/300" alt="Nihiwu">
+
+                <div class="deal-card">
+                    <img src="assets/images/paris.jpg" alt="Nihiwu">
                     <div class="deal-info">
-                        <h3>Nihiwu, Indonesia</h3>
-                        <p class="price">$840–$950</p>
-                        <button class="btn-primary">Book Now</button>
+                        <h3>Paris, France</h3>
+                        <p>Discover the City of Light with iconic landmarks, art, fashion, and cuisine.</p>
+                        <div class="deal-footer">
+                            <span class="price">$840–$950</span>
+                            <button class="btn-outline">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <img src="assets/images/new-york.jpg" alt="Gili Islands">
+                    <div class="deal-info">
+                        <h3>New York, USA</h3>
+                        <p>Explore the world’s most vibrant city packed with culture, skyline, and style.</p>
+                        <div class="deal-footer">
+                            <span class="price">$770–$950</span>
+                            <button class="btn-outline">Book Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,35 +107,34 @@
     <!-- LODGES -->
     <section id="lodges" class="section">
         <div class="container">
-            <h2>Most Popular Lodges Around the World</h2>
-            <div class="lodges-grid-modern">
-                <div class="lodge-card"><img src="https://picsum.photos/seed/lodge1/400/300">
-                    <div>
-                        <h4>Villa Pondok Indah</h4><button class="btn-primary">Book Now</button>
-                    </div>
+            <div class="lodges-header">
+                <h2>Most Popular Lodges Around the World</h2>
+            </div>
+            <div class="lodges-grid">
+                <div class="lodge-card">
+                    <img src="assets/images/alaska.jpg" alt="Villa Pondok Indah">
+                    <h4>Alaska</h4>
                 </div>
-                <div class="lodge-card"><img src="https://picsum.photos/seed/lodge2/400/300">
-                    <div>
-                        <h4>Villa Tanjung</h4><button class="btn-primary">Book Now</button>
-                    </div>
+                <div class="lodge-card">
+                    <img src="assets/images/bali.jpg" alt="Villa Tanjung">
+                    <h4>Bali</h4>
                 </div>
-                <div class="lodge-card"><img src="https://picsum.photos/seed/lodge3/400/300">
-                    <div>
-                        <h4>Bali Patriot</h4><button class="btn-primary">Book Now</button>
-                    </div>
+                <div class="lodge-card">
+                    <img src="assets/images/norway.jpg" alt="Bali Patriot">
+                    <h4>Norway</h4>
                 </div>
-                <div class="lodge-card"><img src="https://picsum.photos/seed/lodge4/400/300">
-                    <div>
-                        <h4>Uluwatu Cliff</h4><button class="btn-primary">Book Now</button>
-                    </div>
+                <div class="lodge-card">
+                    <img src="assets/images/swiss.jpg" alt="Uluwatu Cliff">
+                    <h4>Switzerland</h4>
                 </div>
             </div>
-            <div class="see-all"><a href="#" class="btn-primary">See All</a></div>
         </div>
     </section>
 
+
     <!-- CTA -->
     <section id="cta" class="section-cta">
+        <div class="cta-overlay"></div>
         <div class="container">
             <h2>Get Ready for Your Thrilling Journey</h2>
             <button class="btn-primary">Get Started</button>
@@ -168,9 +166,6 @@
                     <li>Terms of Service</li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Wanderlust Destinations</p>
         </div>
     </footer>
 
