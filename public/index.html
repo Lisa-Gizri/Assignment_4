@@ -14,12 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container header-inner">
+        <div class="header-inner">
             <div class="logo">Wanderlust</div>
             <nav class="nav">
                 <ul class="nav-list">
@@ -30,8 +32,13 @@
                     <li><a href="#about">About Us</a></li>
                 </ul>
             </nav>
-            <button class="burger mobile-nav-toggle"><span></span><span></span><span></span></button>
+            <button class="burger mobile-nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+
         <nav class="mobile-nav">
             <ul>
                 <li><a href="#hero">Discover</a></li>
@@ -66,7 +73,7 @@
             <h2>Discover the Best Travel Deals of the Month</h2>
             <div class="deals-grid">
                 <div class="deal-card">
-                    <img src="assets/images/london.jpg" alt="Raja Ampat">
+                    <img src="assets/images/london.jpg" alt="London, UK">
                     <div class="deal-info">
                         <h3>London, UK</h3>
                         <p>Experience a perfect blend of rich history, modern attractions, and royal charm.</p>
@@ -78,7 +85,7 @@
                 </div>
 
                 <div class="deal-card">
-                    <img src="assets/images/paris.jpg" alt="Nihiwu">
+                    <img src="assets/images/paris.jpg" alt="Paris, France">
                     <div class="deal-info">
                         <h3>Paris, France</h3>
                         <p>Discover the City of Light with iconic landmarks, art, fashion, and cuisine.</p>
@@ -90,7 +97,7 @@
                 </div>
 
                 <div class="deal-card">
-                    <img src="assets/images/new-york.jpg" alt="Gili Islands">
+                    <img src="assets/images/new-york.jpg" alt="New York, USA">
                     <div class="deal-info">
                         <h3>New York, USA</h3>
                         <p>Explore the world’s most vibrant city packed with culture, skyline, and style.</p>
@@ -112,24 +119,56 @@
             </div>
             <div class="lodges-grid">
                 <div class="lodge-card">
-                    <img src="assets/images/alaska.jpg" alt="Villa Pondok Indah">
+                    <img src="assets/images/alaska.jpg" alt="Alaska">
                     <h4>Alaska</h4>
                 </div>
                 <div class="lodge-card">
-                    <img src="assets/images/bali.jpg" alt="Villa Tanjung">
+                    <img src="assets/images/bali.jpg" alt="Bali">
                     <h4>Bali</h4>
                 </div>
                 <div class="lodge-card">
-                    <img src="assets/images/norway.jpg" alt="Bali Patriot">
+                    <img src="assets/images/norway.jpg" alt="Norway">
                     <h4>Norway</h4>
                 </div>
                 <div class="lodge-card">
-                    <img src="assets/images/swiss.jpg" alt="Uluwatu Cliff">
+                    <img src="assets/images/swiss.jpg" alt="Switzerland">
                     <h4>Switzerland</h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- GLIDE SLIDER: Traveler Reviews -->
+    <section id="reviews" class="section section-alt">
+        <div class="container">
+            <h2 data-aos="fade-up">Traveler Reviews</h2>
+            <div class="glide" data-aos="zoom-in">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="review-card">
+                                <p>“Our trip to Paris was absolutely magical. Can’t wait to go back!”</p>
+                                <strong>– Sarah L.</strong>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="review-card">
+                                <p>“New York was incredible! Great skyline and amazing food!”</p>
+                                <strong>– Mark D.</strong>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="review-card">
+                                <p>“Bali was peaceful and beautiful. Loved every moment.”</p>
+                                <strong>– Jess W.</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- CTA -->
@@ -170,12 +209,18 @@
     </footer>
 
     <!-- Third‑party JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
+    <!-- AOS: Animate On Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-    <!-- Site JS -->
+    <!-- Glide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Cleave.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+
     <script src="assets/main.js"></script>
 </body>
 
